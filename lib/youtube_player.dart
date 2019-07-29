@@ -1004,7 +1004,7 @@ class _YoutubePlayerState extends State<YoutubePlayer>
 
   Widget _buildVideo(double _height, double _width, bool _isFullScreen) {
     return AnimatedContainer(
-      duration: Duration(seconds: 1),
+      duration: Duration(seconds: 0),
       height: _height,
       width: _width,
       color: Colors.black,
@@ -1014,7 +1014,7 @@ class _YoutubePlayerState extends State<YoutubePlayer>
           alignment: Alignment(0, 0),
           children: <Widget>[
             AnimatedContainer(
-              duration: Duration(seconds: 1),
+              duration: Duration(seconds: 0),
               height: _height,
               width: _width,
               decoration: widget.showThumbnail && videoId != null
@@ -1030,7 +1030,7 @@ class _YoutubePlayerState extends State<YoutubePlayer>
             Center(
               child: _videoController.value.initialized
                   ? AnimatedContainer(
-                      duration: Duration(seconds: 1),
+                      duration: Duration(seconds: 0),
                       height: _height,
                       child: AspectRatio(
                         aspectRatio: _videoController.value.aspectRatio,
@@ -1046,7 +1046,7 @@ class _YoutubePlayerState extends State<YoutubePlayer>
                     ),
             ),
             AnimatedContainer(
-              duration: Duration(seconds: 1),
+              duration: Duration(seconds: 0),
               height: _height,
               width: _width,
               child: _videoController.value.initialized &&
